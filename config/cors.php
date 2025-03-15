@@ -14,12 +14,13 @@ return [
     | To learn more: https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
     |
     */
-
     'paths' => ['/*', 'sanctum/csrf-cookie', 'events/*'],
 
     'allowed_methods' => ['*'],
 
-    'allowed_origins' => ['*'],
+    'allowed_origins' => [
+        'https://events-ebon-psi.vercel.app', // Specify your frontend URL explicitly
+    ],
 
     'allowed_origins_patterns' => [],
 
